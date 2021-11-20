@@ -1,1 +1,36 @@
-<div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="instructions--description--2Qd_w"><p>Write a method <strong>isLeapYear </strong>with a parameter of type int named <strong>year</strong>.<br><br>The parameter needs to be&nbsp;<strong>greater than or equal to 1</strong>&nbsp;and<strong>&nbsp;</strong>less than or equal to 9999.<br><br>If the parameter is not in that range return&nbsp;<strong>false</strong>.<br><br>Otherwise, if it is in the valid range,&nbsp;calculate if the year is a leap year and return&nbsp;<strong>true</strong>&nbsp;if it is a leap year, otherwise return&nbsp;<strong>false</strong>.<br></p><p>To determine whether a year is a leap year, follow these steps:&nbsp;<br>1. If the year is&nbsp;<strong>evenly divisible by</strong>&nbsp;<strong>4</strong>, go to step 2. Otherwise, go to step 5.<br>2. If the year is&nbsp;<strong>evenly divisible by 100</strong>, go to step 3. Otherwise, go to step 4.<br>3. If the year is&nbsp;<strong>evenly divisible by 400</strong>, go to step 4. Otherwise, go to step 5.<br>4. The year is a leap year (it has 366 days). The method&nbsp;<strong>isLeapYear</strong>&nbsp;needs to return&nbsp;<strong>true.</strong><br>5. The year is not a leap year (it has 365 days). The method&nbsp;<strong>isLeapYear</strong>&nbsp;needs to return&nbsp;<strong>false</strong>.</p><p><br></p><p>The following years&nbsp;<strong>are not leap years</strong>:<br>1700, 1800, 1900, 2100, 2200, 2300, 2500, 2600<br>This is because they are evenly<strong>&nbsp;</strong>divisible by 100 but not by 400.</p><p><br>The following years&nbsp;<strong>are leap years</strong>:<br>1600, 2000, 2400<br>This is because they are&nbsp;<strong>evenly divisible by both 100 and 400</strong>.</p><p><br></p><p><strong>Examples of input/output:</strong></p><ul><li><p><code><strong>isLeapYear(-1600);</strong></code>&nbsp;→&nbsp;should&nbsp;<strong>return</strong>&nbsp;<strong>false</strong>&nbsp;since the parameter is&nbsp;<strong>not in range (1-9999)</strong></p></li><li><p><code><strong>isLeapYear(1600);</strong></code>&nbsp;→&nbsp;should&nbsp;<strong>return true</strong>&nbsp;since 1600 is a leap year</p></li><li><p><code><strong>isLeapYear(2017);</strong></code>&nbsp;→&nbsp;should<strong>&nbsp;</strong>return false&nbsp;since 2017 is&nbsp;<strong>not</strong>&nbsp;a leap year</p></li><li><p><code><strong>isLeapYear(2000);</strong></code>&nbsp; →&nbsp;should&nbsp;<strong>return true</strong>&nbsp;because 2000 is a leap year&nbsp;</p></li></ul><p><strong>NOTE:</strong>&nbsp;The method&nbsp;<strong>isLeapYear&nbsp;</strong>needs to be defined as<strong>&nbsp;public static&nbsp;</strong>​like we have been doing so far in the course.<br><strong>NOTE:</strong>&nbsp;Do not add a&nbsp;&nbsp;<strong>main&nbsp;</strong>method to solution code.</p></div>
+Write a method isLeapYear with a parameter of type int named year.
+
+The parameter needs to be greater than or equal to 1 and less than or equal to 9999.
+
+If the parameter is not in that range return false.
+
+Otherwise, if it is in the valid range, calculate if the year is a leap year and return true if it is a leap year, otherwise return false.
+
+
+To determine whether a year is a leap year, follow these steps:
+1. If the year is evenly divisible by 4, go to step
+2. Otherwise, go to step 5.2. If the year is evenly divisible by 100, go to step
+3. Otherwise, go to step 4.3. If the year is evenly divisible by 400, go to step
+4. Otherwise, go to step 5.4. The year is a leap year (it has 366 days). The method isLeapYear needs to return true.
+5. The year is not a leap year (it has 365 days). The method isLeapYear needs to return false.
+
+The following years are not leap years:
+1700, 1800, 1900, 2100, 2200, 2300, 2500, 2600
+This is because they are evenly divisible by 100 but not by 400.
+
+The following years are leap years:
+1600, 2000, 2400
+This is because they are evenly divisible by both 100 and 400.
+
+Examples of input/output:
+
+* isLeapYear(-1600); → should return false since the parameter is not in range (1-9999)
+
+* isLeapYear(1600); → should return true since 1600 is a leap year
+
+* isLeapYear(2017); → should return false since 2017 is not a leap year
+
+* isLeapYear(2000);  → should return true because 2000 is a leap year 
+
+NOTE: The method isLeapYear needs to be defined as public static like we have been doing so far in the course.
+NOTE: Do not add a  main method to solution code.
