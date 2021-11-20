@@ -1,1 +1,74 @@
-<div class="instructions--instructions---q1NT" style="height: 413px;"><div class="instructions--content--1JI0g"><div class="instructions--title--3vSDk" data-purpose="exercise-title">Speed Converter</div><div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="instructions--description--2Qd_w"><p><strong>1. </strong>Write a method called <strong>toMilesPerHour </strong>that has <strong>1 parameter</strong> of <strong>type</strong> <strong>double</strong> with the name <strong>kilometersPerHour. </strong>This method needs to return the rounded value of the calculation of type <strong>long</strong>.</p><p>If the parameter <strong>kilometersPerHour</strong> is <strong>less than 0, </strong>the method <strong>toMilesPerHour</strong> needs to <strong>return -1</strong> to indicate an <strong>invalid value.</strong></p><p>Otherwise, if it is positive, <strong>calculate the value of miles per hour, round it and return it</strong>. For conversion and rounding, <strong>check the notes in the text below.</strong></p><p><br></p><p><strong>Examples of input/output:</strong></p><ul><li><p><code><strong>toMilesPerHour(1.5);</strong></code><strong> → </strong>should <strong>return</strong> value <strong>1</strong></p></li><li><p><code><strong>toMilesPerHour(10.25);</strong></code><strong> → </strong>should <strong>return</strong> value <strong>6</strong></p></li><li><p><code><strong>toMilesPerHour(-5.6);</strong></code><strong> → </strong>should <strong>return</strong> value <strong>-1</strong></p></li><li><p><code><strong>toMilesPerHour(25.42);</strong></code><strong> → </strong>should <strong>return</strong> value <strong>16</strong></p></li><li><p><code><strong>toMilesPerHour(75.114);</strong></code><strong> → </strong>should <strong>return</strong> value <strong>47</strong></p></li></ul><p><br></p><p><strong>2.</strong> Write another method called <strong>printConversion </strong>with <strong>1 parameter</strong> of <strong>type</strong> <strong>double</strong> with the name <strong>kilometersPerHour.</strong></p><p>This method should<strong> not return anything</strong> (<strong>void</strong>) and it needs to <strong>calculate milesPerHour </strong>from the <strong>kilometersPerHour</strong> parameter.</p><p>Then it needs to print a message in the format <strong>"XX km/h = YY mi/h"</strong>.</p><p><strong>XX</strong> represents the original value <strong>kilometersPerHour</strong>.<br><strong>YY </strong>represents the rounded <strong>milesPerHour </strong>from the <strong>kilometersPerHour</strong> parameter.</p><p>If the parameter <strong>kilometersPerHour </strong>is <strong>&lt; 0</strong> then print the text <strong>"Invalid Value"</strong>.</p><p><br></p><p><strong>Examples of input/output:</strong></p><ul><li><p><code><strong>printConversion(1.5);</strong></code><strong> → </strong>should <strong>print</strong> the following text (into the console - System.out): <strong>1.5 km/h = 1 mi/h</strong></p></li><li><p><code><strong>printConversion(10.25);</strong></code><strong> → </strong>should <strong>print</strong> the following text (into the console - System.out): <strong>10.25 km/h = 6 mi/h</strong></p></li><li><p><code><strong>printConversion(-5.6);</strong></code><strong> → </strong>should <strong>print</strong> the following text (into the console - System.out): <strong>Invalid Value</strong></p></li><li><p><code><strong>printConversion(25.42);</strong></code><strong> → </strong>should <strong>print</strong> the following text (into the console - System.out): <strong>25.42 km/h = 16 mi/h</strong></p></li><li><p><code><strong>printConversion(75.114);</strong></code><strong> → </strong>should <strong>print</strong> the following text (into the console - System.out): <strong>75.114 km/h = 47 mi/h</strong></p></li></ul><p><br></p><p><strong>Use method Math.round to round the number of calculated miles per hour(double). The method round returns long.</strong></p><p><br></p><p><strong>How to use the method round and how it works?</strong></p><p>The<strong> Math.round()</strong> is a built-in math method which returns the closest long to the argument. The result is rounded to an integer by adding 1/2, taking the floor of the result after adding 1/2, and typecasting the result to type long. The method returns the value of the argument rounded to the nearest int value.</p><p><strong>USAGE EXAMPLE:</strong></p><div class="ud-component--base-components--code-block"><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="kwd">double</span><span class="pln"> number </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1.5</span><span class="pun">;</span></li><li class="L1"><span class="kwd">long</span><span class="pln"> rounded </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">round</span><span class="pun">(</span><span class="pln">number</span><span class="pun">);</span></li><li class="L2"><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"rounded= "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> rounded</span><span class="pun">);</span></li><li class="L3"><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"with 3.9= "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">round</span><span class="pun">(</span><span class="lit">3.9</span><span class="pun">));</span></li><li class="L4"><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"with 4.5= "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">round</span><span class="pun">(</span><span class="lit">4.5</span><span class="pun">));</span></li><li class="L5"><span class="kwd">int</span><span class="pln"> sum </span><span class="pun">=</span><span class="pln"> </span><span class="lit">45</span><span class="pun">;</span></li><li class="L6"><span class="kwd">int</span><span class="pln"> count </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span></li><li class="L7"><span class="com">// typecasting so result is double e.g. double / int -&gt; double</span></li><li class="L8"><span class="kwd">double</span><span class="pln"> average </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">double</span><span class="pun">)</span><span class="pln"> sum </span><span class="pun">/</span><span class="pln"> count</span><span class="pun">;</span></li><li class="L9"><span class="kwd">long</span><span class="pln"> roundedAverage </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">round</span><span class="pun">(</span><span class="pln">average</span><span class="pun">);</span></li><li class="L0"><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"average= "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> average</span><span class="pun">);</span></li><li class="L1"><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"roundedAverage= "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> roundedAverage</span><span class="pun">);</span></li></ol></pre></div></div><p><br></p><p><strong>OUTPUT:</strong></p><div class="ud-component--base-components--code-block"><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">rounded</span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span></li><li class="L1"><span class="kwd">with</span><span class="pln"> </span><span class="lit">3.9</span><span class="pun">=</span><span class="pln"> </span><span class="lit">4</span></li><li class="L2"><span class="kwd">with</span><span class="pln"> </span><span class="lit">4.5</span><span class="pun">=</span><span class="pln"> </span><span class="lit">5</span></li><li class="L3"><span class="pln">average</span><span class="pun">=</span><span class="pln"> </span><span class="lit">4.5</span></li><li class="L4"><span class="pln">roundedAverage</span><span class="pun">=</span><span class="pln"> </span><span class="lit">5</span></li></ol></pre></div></div><p><br></p><p><br></p><p><strong>TIP:</strong> In the method <strong>printConversion,</strong> call the method <strong>toMilesPerHour</strong> instead of duplicating the code.</p><p><strong>NOTE:</strong> All methods should be defined as<strong> public static </strong>like we have been doing so far in the course.</p><p><strong>NOTE: 1 mile per hour is 1.609 kilometers per hour</strong></p><p><strong>NOTE:</strong> Do not add a <strong>main </strong>method to the solution code.</p></div></div><div class="instructions--drag-handle--ocDGT"></div></div>
+1. Write a method called toMilesPerHour that has 1 parameter of type double with the name kilometersPerHour. This method needs to return the rounded value of the calculation of type long.
+
+If the parameter kilometersPerHour is less than 0, the method toMilesPerHour needs to return -1 to indicate an invalid value.
+
+Otherwise, if it is positive, calculate the value of miles per hour, round it and return it. For conversion and rounding, check the notes in the text below.
+
+Examples of input/output:
+* toMilesPerHour(1.5); → should return value 1
+* toMilesPerHour(10.25); → should return value 6
+* toMilesPerHour(-5.6); → should return value -1
+* toMilesPerHour(25.42); → should return value 16
+* toMilesPerHour(75.114); → should return value 47
+
+
+2. Write another method called printConversion with 1 parameter of type double with the name kilometersPerHour.
+
+This method should not return anything (void) and it needs to calculate milesPerHour from the kilometersPerHour parameter.
+
+Then it needs to print a message in the format "XX km/h = YY mi/h".
+
+XX represents the original value kilometersPerHour.
+YY represents the rounded milesPerHour from the kilometersPerHour parameter.
+
+If the parameter kilometersPerHour is &lt; 0 then print the text "Invalid Value".
+
+
+Examples of input/output:
+* printConversion(1.5); → should print the following text (into the console - System.out): 1.5 km/h = 1 mi/h
+* printConversion(10.25); → should print the following text (into the console - System.out): 10.25 km/h = 6 mi/h
+* printConversion(-5.6); → should print the following text (into the console - System.out): Invalid Value
+* printConversion(25.42); → should print the following text (into the console - System.out): 25.42 km/h = 16 mi/h
+* printConversion(75.114); → should print the following text (into the console - System.out): 75.114 km/h = 47 mi/h
+
+
+Use method Math.round to round the number of calculated miles per hour(double). The method round returns long.
+
+
+How to use the method round and how it works?
+
+The Math.round() is a built-in math method which returns the closest long to the argument. The result is rounded to an integer by adding 1/2, taking the floor of the result after adding 1/2, and typecasting the result to type long. The method returns the value of the argument rounded to the nearest int value.
+
+USAGE EXAMPLE:
+
+double number = 1.5;
+long rounded = Math.round(number);
+System.out.println("rounded= " + rounded);
+System.out.println("with 3.9= " + Math.round(3.9));
+System.out.println("with 4.5= " + Math.round(4.5));
+int sum = 45;
+int count = 10;
+// typecasting so result is double e.g. double / int -&gt; double
+double average = (double) sum / count;
+long roundedAverage = Math.round(average);
+System.out.println("average= " + average);
+System.out.println("roundedAverage= " + roundedAverage);
+
+
+OUTPUT:
+
+rounded= 2
+with 3.9= 4
+with 4.5= 5
+average= 4.5
+roundedAverage= 5
+
+
+
+TIP: In the method printConversion, call the method toMilesPerHour instead of duplicating the code.
+
+NOTE: All methods should be defined as public static like we have been doing so far in the course.
+
+NOTE: 1 mile per hour is 1.609 kilometers per hour
+
+NOTE: Do not add a main method to the solution code.
