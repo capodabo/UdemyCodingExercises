@@ -1,1 +1,34 @@
-<div class="instructions--instructions---q1NT"><div class="instructions--content--1JI0g"><div class="instructions--title--3vSDk" data-purpose="exercise-title">MegaBytes Converter</div><div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="instructions--description--2Qd_w"><p>Write a method called&nbsp;<strong>printMegaBytesAndKiloBytes</strong>&nbsp;that has&nbsp;<strong>1 parameter of type</strong>&nbsp;<strong>int</strong>&nbsp;with the name&nbsp;<strong>kiloBytes</strong>.<br><br>The method should<strong>&nbsp;</strong>not return anything&nbsp;(<strong>void</strong>) and it needs to calculate the megabytes and remaining kilobytes from the&nbsp;<strong>kilobytes</strong>&nbsp;parameter.<br><br>Then it needs to print a message in the format<strong>&nbsp;</strong>"XX KB = YY MB and ZZ KB".<br><br><strong>XX&nbsp;</strong>represents the original value&nbsp;<strong>kiloBytes</strong>.<br><strong>YY&nbsp;</strong>represents the calculated&nbsp;<strong>megabytes</strong>.<br><strong>ZZ&nbsp;</strong>represents the calculated&nbsp;<strong>remaining kilobytes</strong>.</p><p>For example, when the parameter&nbsp;<strong>kiloBytes&nbsp;</strong>is&nbsp;<strong>2500</strong>&nbsp;it needs to&nbsp;<strong>print&nbsp;"2500 KB = 2 MB and 452 KB"</strong></p><p>If the parameter&nbsp;<strong>kiloBytes</strong>&nbsp;is&nbsp;<strong>less than 0</strong>&nbsp;then&nbsp;<strong>print</strong>&nbsp;the text&nbsp;<strong>"Invalid Value"</strong>.</p><p><strong>EXAMPLE INPUT/OUTPUT</strong></p><ul><li><p><code><strong>printMegaBytesAndKiloBytes(2500);</strong></code><strong>&nbsp;→&nbsp;</strong>should&nbsp;<strong>print</strong>&nbsp;the following text<strong>: "2500 KB = 2 MB and 452 KB"</strong></p></li><li><p><code><strong>printMegaBytesAndKiloBytes(-1024);</strong></code><strong>&nbsp;→&nbsp;</strong>should&nbsp;<strong>print&nbsp;</strong>the following text: "<strong>Invalid Value"&nbsp;</strong>because parameter is less than 0.</p></li><li><p><code><strong>printMegaBytesAndKiloBytes(5000);</strong></code><strong>&nbsp;→&nbsp;</strong>should&nbsp;<strong>print&nbsp;</strong>the following text: "<strong>5000 KB = 4 MB and 904 KB"</strong></p></li></ul><p><br></p><p><strong>TIP:</strong>&nbsp;<strong>Be extremely careful about&nbsp;spaces&nbsp;in the printed message.&nbsp;</strong></p><p><strong>TIP:</strong>&nbsp;Use the remainder operator</p><p><strong>TIP:</strong>&nbsp;1 MB = 1024 KB</p><p><strong>NOTE:&nbsp;</strong>Do not set&nbsp;<strong>kilobytes&nbsp;</strong>parameter value inside your method<strong>.&nbsp;</strong></p><p><strong>NOTE:&nbsp;</strong>The solution will not be accepted if there are&nbsp;<strong>extra spaces</strong>.</p><p><strong>NOTE:</strong>&nbsp;The&nbsp;<strong>printMegaBytesAndKiloBytes</strong>&nbsp;method&nbsp;&nbsp;needs to be defined as<strong>&nbsp;</strong>public static&nbsp;​like we have been doing so far in the course.<br><strong>NOTE:</strong>&nbsp;Do not add a&nbsp;&nbsp;<strong>main&nbsp;</strong>method to solution code.</p></div></div><div class="instructions--drag-handle--ocDGT"></div></div>
+Write a method called printMegaBytesAndKiloBytes that has 1 parameter of type int with the name kiloBytes.
+
+The method should not return anything (void) and it needs to calculate the megabytes and remaining kilobytes from the kilobytes parameter.
+
+Then it needs to print a message in the format "XX KB = YY MB and ZZ KB".
+
+XX represents the original value kiloBytes.
+YY represents the calculated megabytes.
+ZZ represents the calculated remaining kilobytes.
+
+For example, when the parameter kiloBytes is 2500 it needs to print "2500 KB = 2 MB and 452 KB"
+
+If the parameter kiloBytes is less than 0 then print the text "Invalid Value".
+
+
+EXAMPLE INPUT/OUTPUT
+
+* printMegaBytesAndKiloBytes(2500); → should print the following text: "2500 KB = 2 MB and 452 KB"
+
+* printMegaBytesAndKiloBytes(-1024); → should print the following text: "Invalid Value" because parameter is less than 0.
+
+* printMegaBytesAndKiloBytes(5000); → should print the following text: "5000 KB = 4 MB and 904 KB"
+
+
+TIP: Be extremely careful about spaces in the printed message. 
+
+TIP: Use the remainder operator
+
+TIP: 1 MB = 1024 KB
+
+NOTE: Do not set kilobytes parameter value inside your method. 
+
+NOTE: The solution will not be accepted if there are extra spaces.
+NOTE: The printMegaBytesAndKiloBytes method  needs to be defined as public static like we have been doing so far in the course.NOTE: Do not add a  main method to solution code.
